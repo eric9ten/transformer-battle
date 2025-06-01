@@ -233,6 +233,7 @@ export function Battlefield({ autobot, decepticon, onBattleComplete }: Battlefie
                 <ResetIcon />
             </IconButton>
             <Button
+                data-testid="start-battle"
                 label="Start Battle"
                 isDisabled={!isBattleReady}
                 onClick={startBattle}

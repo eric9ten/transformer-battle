@@ -1,51 +1,31 @@
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router';
-import React, { Suspense, lazy } from 'react';
 import type { Route } from './+types/root';
 import './app.css';
 
-// const ScrollRestoration = lazy(() =>
-//   import('react-router').then(module => ({
-//     default: module.ScrollRestoration,
-//   }))
-// );
-// const Scripts = lazy(() =>
-//   import('react-router').then(module => ({
-//     default: module.Scripts,
-//   }))
-// );
-
-export function Layout({ children }: { children: React.ReactNode }) {
+export default function Root() {
   return (
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
-        {/* <Links /> */}
-          <link
-            href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet"
-          />
+        <Links />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body>
-        {children}
-        {/* {typeof window !== 'undefined' && (
-          <Suspense fallback={null}> */}
-            <ScrollRestoration />
-            <Scripts />
-          {/* </Suspense>
-        )} */}
+        <Outlet />
+        <ScrollRestoration />
+        <Scripts />
       </body>
     </html>
   );
-}
-
-export default function App() {
-  return <Outlet />;
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {

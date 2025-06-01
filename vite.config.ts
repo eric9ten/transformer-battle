@@ -4,14 +4,16 @@ import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import path from 'path';
 
+const isTest = process.env.VITEST === 'true';
+
 export default defineConfig({
   plugins: [
-    reactRouter(),
+     !isTest && reactRouter(),
     tailwindcss(),
     tsconfigPaths({
       projects: ['./tsconfig.json'],
     }),
-  ],
+  ].filter(Boolean),
   root: 'app',
   assetsInclude: ['**/*.json', '**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg'],
   resolve: {
@@ -40,5 +42,10 @@ export default defineConfig({
   base: '/',  
   build: {
     sourcemap: false,
+  },
+  test: {
+    environment: 'jsdom',
+    globals: true,
+    setupFiles: './tests/setup.ts',
   },
 });
