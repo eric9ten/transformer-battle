@@ -1,0 +1,158 @@
+[
+  {
+    "id": "autobot_001",
+    "name": "Optimus Prime",
+    "faction": "Autobot",
+    "icon": "",
+    "health": 1000,
+    "wins": 0,
+    "losses": 0,
+    "abilities": [
+      {
+        "id": "ability_001",
+        "name": "Plasma Cannon",
+        "description": "Fires a high-energy plasma bolt that incinerates targets on impact.",
+        "damage": 150,
+        "cooldown": 8
+      },
+      {
+        "id": "ability_003",
+        "name": "Cybernetic Punch",
+        "description": "Delivers a powerful servo-driven punch, crushing armor with hydraulic force.",
+        "damage": 100,
+        "cooldown": 5
+      },
+      {
+        "id": "ability_004",
+        "name": "Fusion Kick",
+        "description": "Executes a high-impact kick with an energized leg actuator, knocking enemies back.",
+        "damage": 110,
+        "cooldown": 6
+      }
+    ]
+  },
+  {
+    "id": "autobot_002",
+    "name": "Bumblebee",
+    "faction": "Autobot",
+    "icon": "",
+    "health": 700,
+    "wins": 0,
+    "losses": 0,
+    "abilities": [
+      {
+        "id": "ability_006",
+        "name": "Stealth Cloak",
+        "description": "Activates a cloaking device, rendering the Transformer invisible for a short duration.",
+        "damage": 0,
+        "cooldown": 18
+      },
+      {
+        "id": "ability_007",
+        "name": "Flip Kick",
+        "description": "Performs an acrobatic flip kick, striking multiple enemies with a spinning, energized strike.",
+        "damage": 90,
+        "cooldown": 8
+      },
+      {
+        "id": "ability_004",
+        "name": "Fusion Kick",
+        "description": "Executes a high-impact kick with an energized leg actuator, knocking enemies back.",
+        "damage": 110,
+        "cooldown": 6
+      },
+      {
+        "id": "ability_003",
+        "name": "Cybernetic Punch",
+        "description": "Delivers a powerful servo-driven punch, crushing armor with hydraulic force.",
+        "damage": 100,
+        "cooldown": 5
+      },
+      {
+        "id": "ability_010",
+        "name": "Overdrive Boost",
+        "description": "Activates a temporary power surge, increasing attack speed and damage output.",
+        "damage": 0,
+        "cooldown": 22
+      }
+    ]
+  },
+  {
+    "id": "autobot_003",
+    "name": "Ironhide",
+    "faction": "Autobot",
+    "icon": "",
+    "health": 900,
+    "wins": 0,
+    "losses": 0,
+    "abilities": [
+      {
+        "id": "ability_005",
+        "name": "Rocket Barrage",
+        "description": "Launches a salvo of homing rockets that track multiple targets.",
+        "damage": 200,
+        "cooldown": 20
+      },
+      {
+        "id": "ability_009",
+        "name": "Backhand Spin",
+        "description": "Spins with a backhand strike, using reinforced alloy arms to deliver a wide-area melee blow.",
+        "damage": 95,
+        "cooldown": 7
+      },
+      {
+        "id": "ability_003",
+        "name": "Cybernetic Punch",
+        "description": "Delivers a powerful servo-driven punch, crushing armor with hydraulic force.",
+        "damage": 100,
+        "cooldown": 5
+      }
+    ]
+  },
+  {
+    "id": "autobot_004",
+    "name": "Ratchet",
+    "faction": "Autobot",
+    "icon": "",
+    "health": 800,
+    "wins": 0,
+    "losses": 0,
+    "abilities": [
+      {
+        "id": "ability_008",
+        "name": "Repair Nanites",
+        "description": "Deploys nanites to repair internal systems, restoring health over time.",
+        "damage": 0,
+        "cooldown": 25
+      },
+      {
+        "id": "ability_001",
+        "name": "Plasma Cannon",
+        "description": "Fires a high-energy plasma bolt that incinerates targets on impact.",
+        "damage": 150,
+        "cooldown": 8
+      },
+      {
+        "id": "ability_003",
+        "name": "Cybernetic Punch",
+        "description": "Delivers a powerful servo-driven punch, crushing armor with hydraulic force.",
+        "damage": 100,
+        "cooldown": 5
+      },
+      {
+        "id": "ability_004",
+        "name": "Fusion Kick",
+        "description": "Executes a high-impact kick with an energized leg actuator, knocking enemies back.",
+        "damage": 110,
+        "cooldown": 6
+      },
+      {
+        "id": "ability_007",
+        "name": "Flip Kick",
+        "description": "Performs an acrobatic flip kick, striking multiple enemies with a spinning, energized strike.",
+        "damage": 90,
+        "cooldown": 8
+      }
+    ]
+  }
+]

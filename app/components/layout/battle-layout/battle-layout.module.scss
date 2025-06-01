@@ -1,0 +1,44 @@
+.battle_layout {
+  display: grid;
+  grid-template-areas:
+    'autobots battlefield decepticons'
+    'results results results';
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 75% 25%;
+  gap: 1rem;
+  height: 100%;
+  min-height: 700px;
+  width: 100%;
+  padding: 1rem;
+}
+
+.combatants_section {
+    &:first-child {
+        grid-area: autobots;
+    }
+    &:last-child {
+        grid-area: decepticons;
+    }
+}
+
+.battlefield_section {
+    grid-area: battlefield;
+}
+
+.results_section {
+    grid-area: results;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+
+    p {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+    }
+}
+
+.bfBorder {
+    border: 2px solid var(--color-red-600);
+    border-radius: 8px;
+
+}

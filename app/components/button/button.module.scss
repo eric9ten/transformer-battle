@@ -1,0 +1,14 @@
+.standard-button {
+    background-color: var(--color-red-700);
+
+    &:hover {
+        background-color: var(--color-red-900);
+        cursor: pointer;
+
+    }
+
+    &:disabled {
+        background-color: transparent;
+        cursor: default;
+    }
+}

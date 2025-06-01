@@ -1,0 +1,45 @@
+[
+  {
+    "id": "decepticon_001",
+    "name": "Megatron",
+    "faction": "Decepticon",
+    "icon": "",
+    "health": 1000,
+    "wins": 0,
+    "losses": 0,
+    "abilities": [
+      {
+        "id": "ability_101",
+        "name": "Fusion Cannon",
+        "description": "Devastating energy blast that obliterates targets.",
+        "damage": 160,
+        "cooldown": 9
+      },
+      {
+        "id": "ability_102",
+        "name": "Dark Slash",
+        "description": "A swift melee attack with an energized blade.",
+        "damage": 120,
+        "cooldown": 6
+      }
+    ]
+  },
+  {
+    "id": "decepticon_002",
+    "name": "Starscream",
+    "faction": "Decepticon",
+    "icon": "",
+    "health": 800,
+    "wins": 0,
+    "losses": 0,
+    "abilities": [
+      {
+        "id": "ability_103",
+        "name": "Null-Ray",
+        "description": "Fires a beam that disables enemy systems.",
+        "damage": 100,
+        "cooldown": 7
+      }
+    ]
+  }
+]

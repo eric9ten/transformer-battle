@@ -1,0 +1,88 @@
+import type { TAbility } from '~/types/ability.type';
+
+export const abilities: TAbility[] = [
+  {
+    id: 'ability_001',
+    name: 'Plasma Cannon',
+    description: 'Fires a high-energy plasma bolt that incinerates targets on impact.',
+    damage: 150,
+    cooldown: 8,
+  },
+  {
+    id: 'ability_003',
+    name: 'Cybernetic Punch',
+    description: 'Delivers a powerful servo-driven punch, crushing armor with hydraulic force.',
+    damage: 100,
+    cooldown: 5,
+  },
+  {
+    id: 'ability_004',
+    name: 'Fusion Kick',
+    description: 'Executes a high-impact kick with an energized leg actuator, knocking enemies back.',
+    damage: 110,
+    cooldown: 6,
+  },
+  {
+    id: 'ability_006',
+    name: 'Stealth Cloak',
+    description: 'Activates a cloaking device, rendering the Transformer invisible for a short duration.',
+    damage: 0,
+    cooldown: 18,
+  },
+  {
+    id: 'ability_007',
+    name: 'Flip Kick',
+    description: 'Performs an acrobatic flip kick, striking multiple enemies with a spinning, energized strike.',
+    damage: 90,
+    cooldown: 8,
+  },
+  {
+    id: 'ability_010',
+    name: 'Overdrive Boost',
+    description: 'Activates a temporary power surge, increasing attack speed and damage output.',
+    damage: 0,
+    cooldown: 22,
+  },
+  {
+    id: 'ability_005',
+    name: 'Rocket Barrage',
+    description: 'Launches a salvo of homing rockets that track multiple targets.',
+    damage: 200,
+    cooldown: 20,
+  },
+  {
+    id: 'ability_009',
+    name: 'Backhand Spin',
+    description: 'Spins with a backhand strike, using reinforced alloy arms to deliver a wide-area melee blow.',
+    damage: 95,
+    cooldown: 7,
+  },
+  {
+    id: 'ability_008',
+    name: 'Repair Nanites',
+    description: 'Deploys nanites to repair internal systems, restoring health over time.',
+    damage: 0,
+    cooldown: 25,
+  },
+  {
+    id: 'ability_101',
+    name: 'Fusion Cannon',
+    description: 'Devastating energy blast that obliterates targets.',
+    damage: 160,
+    cooldown: 9,
+  },
+  {
+    id: 'ability_102',
+    name: 'Dark Slash',
+    description: 'A swift melee attack with an energized blade.',
+    damage: 120,
+    cooldown: 6,
+  },
+  {
+    id: 'ability_103',
+    name: 'Null-Ray',
+    description: 'Fires a beam that disables enemy systems.',
+    damage: 100,
+    cooldown: 7,
+  },
+];
