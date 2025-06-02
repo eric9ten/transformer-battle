@@ -188,7 +188,7 @@ export function Battlefield({ autobot, decepticon, onBattleComplete }: Battlefie
                         <img src={battleState.autobot.icon || defaultAutobotIcon} alt="" />
                     </div>
                     <div className={s.battlefield_info}>
-                        <h3 className={s.battlefield_name}>{battleState.autobot.name}</h3>
+                        <h3 className={s.battlefield_name} data-testid="autobot-name">{battleState.autobot.name}</h3>
                         <p>Health: {battleState.autobot.health}</p>
                         <p>Abilities: {battleState.autobot.abilities.map(a => a.name).join(', ')}</p>
                     </div>
@@ -199,7 +199,7 @@ export function Battlefield({ autobot, decepticon, onBattleComplete }: Battlefie
             {battleState.decepticon ? (
                 <div className={s.battlefield_combatant}>
                     <div className={`${s.battlefield_info} ${s.right}`}>
-                        <h3 className={s.battlefield_name}>{battleState.decepticon.name}</h3>
+                        <h3 className={s.battlefield_name} data-testid="decepticon-name">{battleState.decepticon.name}</h3>
                         <p>Health: {battleState.decepticon.health}</p>
                         <p>Abilities: {battleState.decepticon.abilities.map(a => a.name).join(', ')}</p>
                     </div>
@@ -229,7 +229,10 @@ export function Battlefield({ autobot, decepticon, onBattleComplete }: Battlefie
         <div className="w-full flex flex-col justify-center self-end">
             <p className="mb-2 text-sm text-stone-500 italic text-center">Select an Autobot and Decepticon to start the battle.</p>
             <div className="w-full flex flex-row justify-center gap-6">
-            <IconButton onClick={clearBattlefield} title="Clear Battlefield">
+            <IconButton onClick={clearBattlefield}
+                title="Clear Battlefield"
+                data-testid="clear-battle"
+              >
                 <ResetIcon />
             </IconButton>
             <Button
@@ -238,7 +241,10 @@ export function Battlefield({ autobot, decepticon, onBattleComplete }: Battlefie
                 isDisabled={!isBattleReady}
                 onClick={startBattle}
             />
-            <IconButton onClick={restartBattle} title="Restart Battle">
+            <IconButton onClick={restartBattle} 
+                title="Restart Battle"
+                data-testid="restart-battle"
+              >
                 <ReloadIcon />
             </IconButton>
             </div>

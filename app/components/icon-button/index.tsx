@@ -6,7 +6,7 @@ interface IconButtonProps {
     onClick: () => void;
 }
 
-export function IconButton({title, children, onClick}: IconButtonProps) {
+export function IconButton({title, children, onClick,  ...props}: IconButtonProps) {
     return (
         <button
             type="button"
@@ -16,6 +16,7 @@ export function IconButton({title, children, onClick}: IconButtonProps) {
             onClick={() => {
                 onClick();
             }}
+            {...props}
         >
             { children }
         </button>   
