@@ -41,5 +41,55 @@
         "cooldown": 7
       }
     ]
+  },
+  {
+    "id": "decepticon_003",
+    "name": "Soundwave",
+    "faction": "Decepticon",
+    "icon": "",
+    "health": 850,
+    "wins": 0,
+    "losses": 0,
+    "abilities": [
+      {
+        "id": "ability_104",
+        "name": "Sonic Boom",
+        "description": "Blasts enemies with disruptive soundwaves.",
+        "damage": 90,
+        "cooldown": 5
+      },
+      {
+        "id": "ability_105",
+        "name": "Deploy Minions",
+        "description": "Releases robotic minions to attack enemies.",
+        "damage": 60,
+        "cooldown": 8
+      }
+    ]
+  },
+  {
+    "id": "decepticon_004",
+    "name": "Shockwave",
+    "faction": "Decepticon",
+    "icon": "",
+    "health": 950,
+    "wins": 0,
+    "losses": 0,
+    "abilities": [
+      {
+        "id": "ability_106",
+        "name": "Plasma Burst",
+        "description": "Fires a concentrated plasma blast.",
+        "damage": 140,
+        "cooldown": 7
+      },
+      {
+        "id": "ability_107",
+        "name": "Logic Override",
+        "description": "Temporarily weakens enemy defenses through logical manipulation.",
+        "damage": 50,
+        "cooldown": 6
+      }
+    ]
   }
 ]
