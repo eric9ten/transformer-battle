@@ -1,4 +1,4 @@
-# Coding Challenge for Application
+# Coding Challenge for Front-End Developer Position
 
 ## Welcome to React Router!
 
